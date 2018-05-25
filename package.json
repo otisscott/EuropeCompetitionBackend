@@ -18,7 +18,7 @@
     "mongodb": "^2.2.33",
     "nodemon": "^1.12.5",
     "zone.js": "^0.8.14"
-  }
+  },
   "author": "Otis Scott",
   "license": "ISC",
   "bugs": {
