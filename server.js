@@ -6,6 +6,12 @@ const ObjectID = mongodb.ObjectID;
 
 const USERS = 'users';
 const CHALLENGES = 'challenges';
+const OTIS = 'otis';
+const MAXB = 'maxb';
+const MAXJ = 'maxj';
+const OLIVER = 'oliver';
+const NICK = 'nick';
+const SPENCER = 'spencer';
 const app = express();
 app.use(bodyParser.json());
 
@@ -92,6 +98,76 @@ app.put("/api/challenges/:id", (req, res, next) => {
     } else {
       updateDoc._id = req.params.id;
       res.status(200).json(updateDoc);
+    }
+  });
+});
+
+app.delete("/api/otis/:id", (req, res, next) => {
+  db.collection(OTIS).deleteOne({_id: new ObjectID(req.params.id)}, (err, result) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(200).json(req.params.id);
+    }
+  });
+});
+
+app.delete("/api/otis/:id", (req, res, next) => {
+  db.collection(OTIS).deleteOne({_id: new ObjectID(req.params.id)}, (err, result) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(200).json(req.params.id);
+    }
+  });
+});
+
+app.delete("/api/maxb/:id", (req, res, next) => {
+  db.collection(MAXB).deleteOne({_id: new ObjectID(req.params.id)}, (err, result) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(200).json(req.params.id);
+    }
+  });
+});
+
+app.delete("/api/maxj/:id", (req, res, next) => {
+  db.collection(MAXJ).deleteOne({_id: new ObjectID(req.params.id)}, (err, result) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(200).json(req.params.id);
+    }
+  });
+});
+
+app.delete("/api/oliver/:id", (req, res, next) => {
+  db.collection(OLIVER).deleteOne({_id: new ObjectID(req.params.id)}, (err, result) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(200).json(req.params.id);
+    }
+  });
+});
+
+app.delete("/api/nick/:id", (req, res, next) => {
+  db.collection(NICK).deleteOne({_id: new ObjectID(req.params.id)}, (err, result) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(200).json(req.params.id);
+    }
+  });
+});
+
+app.delete("/api/spencer/:id", (req, res, next) => {
+  db.collection(SPENCER).deleteOne({_id: new ObjectID(req.params.id)}, (err, result) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(200).json(req.params.id);
     }
   });
 });
