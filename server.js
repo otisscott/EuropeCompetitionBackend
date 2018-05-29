@@ -86,7 +86,7 @@ app.put("/api/challenges/:id", (req, res, next) => {
   const updateDoc = req.body;
   delete updateDoc._id;
 
-  db.collection(CHALLENGES).updateOne(findByIdAndUpdate(new ObjectID(req.params.id), updateDoc, {new: true}, (err, doc) => {
+  db.collection(CHALLENGES).updateOne({_id: new ObjectID(req.params.id)}, updateDoc, (err, doc) => {
     if (err) {
       handleError(res, err.message, "Failed to update teacher");
     } else {
