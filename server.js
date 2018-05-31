@@ -224,8 +224,7 @@ app.get("/api/spencer", (req, res, next) => {
 
 app.post("/api/challenges", (req, res, next) => {
   csv
-    .fromPath("
-    my.csv")
+    .fromPath("my.csv")
     .on("data", function(data){
       sub = data[3].split(", ")
       for(let i = 0; i < sub.length; i++) {
