@@ -11,11 +11,11 @@
     "url": "git+https://github.com/otisscott/EuropeCompetitionBackend.git"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "core-js": "^2.4.1",
     "express": "^4.16.2",
     "fast-csv": "^2.4.1",
-    "mongodb": "^2.2.33",
+    "mongodb": "^2.2.35",
     "nodemon": "^1.12.5",
     "zone.js": "^0.8.14"
   },
