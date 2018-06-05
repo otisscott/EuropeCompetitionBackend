@@ -227,6 +227,84 @@ app.get("/api/spencer", (req, res, next) => {
   });
 });
 
+app.post("/api/otis", (req, res, next) => {
+  let finishedChallenge = req.body;
+  finishedChallenge.createDate = new Date();
+
+  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(201).json(doc);
+    }
+  });
+});
+
+app.post("/api/otis", (req, res, next) => {
+  let finishedChallenge = req.body;
+  finishedChallenge.createDate = new Date();
+
+  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(201).json(doc);
+    }
+  });
+});
+
+app.post("/api/otis", (req, res, next) => {
+  let finishedChallenge = req.body;
+  finishedChallenge.createDate = new Date();
+
+  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(201).json(doc);
+    }
+  });
+});
+
+app.post("/api/otis", (req, res, next) => {
+  let finishedChallenge = req.body;
+  finishedChallenge.createDate = new Date();
+
+  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(201).json(doc);
+    }
+  });
+});
+
+app.post("/api/otis", (req, res, next) => {
+  let finishedChallenge = req.body;
+  finishedChallenge.createDate = new Date();
+
+  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(201).json(doc);
+    }
+  });
+});
+
+app.post("/api/otis", (req, res, next) => {
+  let finishedChallenge = req.body;
+  finishedChallenge.createDate = new Date();
+
+  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+    if (err) {
+      handleError(res, err.message, "Failed to complete challenge");
+    } else {
+      res.status(201).json(doc);
+    }
+  });
+});
+
 app.post("/api/challenges", (req, res, next) => {
   csv
     .fromPath("my.csv")
