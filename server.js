@@ -240,11 +240,11 @@ app.post("/api/otis", (req, res, next) => {
   });
 });
 
-app.post("/api/otis", (req, res, next) => {
+app.post("/api/maxb", (req, res, next) => {
   let finishedChallenge = req.body;
   finishedChallenge.createDate = new Date();
 
-  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+  db.collection(MAXB).insertOne(finishedChallenge, (err, doc) => {
     if (err) {
       handleError(res, err.message, "Failed to complete challenge");
     } else {
@@ -253,11 +253,11 @@ app.post("/api/otis", (req, res, next) => {
   });
 });
 
-app.post("/api/otis", (req, res, next) => {
+app.post("/api/maxj", (req, res, next) => {
   let finishedChallenge = req.body;
   finishedChallenge.createDate = new Date();
 
-  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+  db.collection(MAXJ).insertOne(finishedChallenge, (err, doc) => {
     if (err) {
       handleError(res, err.message, "Failed to complete challenge");
     } else {
@@ -266,11 +266,11 @@ app.post("/api/otis", (req, res, next) => {
   });
 });
 
-app.post("/api/otis", (req, res, next) => {
+app.post("/api/oliver", (req, res, next) => {
   let finishedChallenge = req.body;
   finishedChallenge.createDate = new Date();
 
-  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+  db.collection(OLIVER).insertOne(finishedChallenge, (err, doc) => {
     if (err) {
       handleError(res, err.message, "Failed to complete challenge");
     } else {
@@ -279,11 +279,11 @@ app.post("/api/otis", (req, res, next) => {
   });
 });
 
-app.post("/api/otis", (req, res, next) => {
+app.post("/api/nick", (req, res, next) => {
   let finishedChallenge = req.body;
   finishedChallenge.createDate = new Date();
 
-  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+  db.collection(NICK).insertOne(finishedChallenge, (err, doc) => {
     if (err) {
       handleError(res, err.message, "Failed to complete challenge");
     } else {
@@ -292,11 +292,11 @@ app.post("/api/otis", (req, res, next) => {
   });
 });
 
-app.post("/api/otis", (req, res, next) => {
+app.post("/api/spencer", (req, res, next) => {
   let finishedChallenge = req.body;
   finishedChallenge.createDate = new Date();
 
-  db.collection(OTIS).insertOne(finishedChallenge, (err, doc) => {
+  db.collection(SPENCER).insertOne(finishedChallenge, (err, doc) => {
     if (err) {
       handleError(res, err.message, "Failed to complete challenge");
     } else {
